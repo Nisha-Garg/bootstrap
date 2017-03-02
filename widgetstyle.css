@@ -1,0 +1,155 @@
+.main1{
+  margin-left: 5%;
+}
+.name1
+{
+    margin-left: 6%;
+    margin-top: 2%;
+}
+#namelabel
+{
+    font-size: large;
+}
+.dob1
+{
+    margin-left: 6%;
+    margin-top: 2%;
+}
+.dob2
+{
+    margin-left: 6%;
+    margin-top: 2%;
+}
+.dob3
+{
+
+    margin-left: 6%;
+    margin-top: 2%;
+}
+/*#daterangepicker
+{
+    margin-left: 200;
+margin-top: -30;
+}*/
+.dob4
+{
+    margin-left: 6%;
+    margin-top: 2%;
+}
+.dob5
+{
+    margin-left: 6%;
+    margin-top: 2%;
+}
+.name2
+{
+    margin-left: 6%;
+    margin-top: 2%;
+}
+#name2{
+    background: lightgrey;
+    min-width: 300px;
+}
+
+.name2 .dropdown-menu>.active>a, .name2.dropdown-menu>.active>a:hover, .name2.dropdown-menu>.active>a:focus {
+    background: #C8362E;
+}
+.name3
+{
+    margin-left: 6%;
+    margin-top: 2%;
+}
+.dob6
+{
+    margin-left: 6%;
+    margin-top: 2%;
+}
+#doblabel
+{
+    font-size: large;
+}
+.caption
+{
+    background-color: #f1f1f1;
+}
+
+.model1
+{
+    margin-left: 6%;
+    margin-top: 2%;
+}
+#modal1{
+    margin-left: 15%;
+}
+.tootltip1
+{
+    margin-left: 6%;
+    margin-top: 2%;
+}
+.popover1{
+    margin-left: 6%;
+    margin-top: 2%;
+}
+.alert1{
+    margin-left: 6%;
+    margin-top: 2%;
+}
+.corousel1{
+    margin-left: 6%;
+    margin-top: 2%;
+}
+#sec1{
+    font-size: x-large;
+}
+#sec2{
+    font-size: x-large;
+}
+#sec3{
+    font-size: x-large;
+}
+.card
+{
+    box-sizing: border-box;
+    border-style:outset;
+}
+.badge
+{
+    float:right;
+}
+#tip{
+    margin-left: 6%;
+    margin-top: 6%;
+}
+.skill1
+{
+    margin-left: 6%;
+    margin-top: 2%;
+}
+.skill2
+{
+    margin-left: 6%;
+    margin-top: 2%;
+}
+
+#skilllabel
+{
+    font-size: large;
+}
+.button1
+{
+    margin-left:6%;
+    margin-top:2%;
+}
+.bootstrap-tagsinput{
+    display: block !important;
+}
+#ig1
+{
+    margin-left: 2%;
+    margin-right: 10%;
+}
+#ig2
+{
+    margin-left: 2%;
+    margin-right: 10%;
+}

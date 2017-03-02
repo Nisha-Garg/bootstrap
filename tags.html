@@ -1,0 +1,184 @@
+<html>
+    <head>
+        <title>Tags</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="files/bootstrap-tagsinput.css">
+        <link rel="stylesheet" href="files/bootstrap-tagsinput-typeahead.css">
+        <link rel="stylesheet" href="jquery-ui.css">
+        <link rel="stylesheet" href="tag.css">
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> -->
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+        <!-- <script src="files/bloodhound.min.js"></script> -->
+        <script src="files/bootstrap-tagsinput.js"></script>
+        <!-- <script src="files/bootstrap-typeahead.js"> </script> -->
+        <script src="typeahead.bundle.min.js"></script>
+        <script src="tag1.js"></script>
+        <script>
+            $(function(){
+                $('#tag1').tagsinput({
+                    maxTags: 3,
+                });
+                $('#tag2').tagsinput({
+                    confirmKeys: [13, 43]
+                });
+                $('#tag3').tagsinput({
+                    allowDuplicates: true
+                });
+                $('#tag4').tagsinput({
+                    allowDuplicates: false,
+                    itemValue: 'id',  // this will be used to set id of tag
+                    itemText: 'label' // this will be used to set text of tag
+                });
+                $('#tag4').tagsinput('add', { id: 'tagid', label: 'django' });
+            })
+
+        </script>
+    </head>
+    <body>
+        <div class="category-container">
+            <h1 class="heading"> BOOTSTRAP TAGS </h1>
+        <form class="form-horizontal" role="form" data-toggle="validator" method="post" name="ContactForm" id="myform">
+            <div class="skill1">
+                <div class="row">
+                    <div class="col-sm-6 col-md-11">
+                        <div class="thumbnail">
+                            <div class="caption">
+                                <h3>Bootstrap Tags using Typeahead </h3>
+                                <p>
+                                    <div class="form-group">
+                                        <label for="skills" class="col-md-3 control-label" id="skilllabel">*Skills</label>
+                                        <div class="col-md-5">
+                                            <input type="text" id="category" class="form-control">
+                                        </div>
+                                    </div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill2">
+                <div class="row">
+                    <div class="col-sm-6 col-md-11">
+                        <div class="thumbnail">
+                            <div class="caption">
+                                <h3>Bootstrap Tags using option maxTags</h3>
+                                <p>
+                                    <div class="form-group">
+                                        <label for="skills" class="col-md-3 control-label" id="skilllabel">*Skills</label>
+                                        <div class="col-md-5">
+                                            <input type="text" id="tag1" class="form-control">
+                                        </div>
+                                    </div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill3">
+                <div class="row">
+                    <div class="col-sm-6 col-md-11">
+                        <div class="thumbnail">
+                            <div class="caption">
+                                <h3>confirm keys are + and enter</h3>
+                                <p>
+                                    <div class="form-group">
+                                        <label for="skills" class="col-md-3 control-label" id="skilllabel">*Skills</label>
+                                        <div class="col-md-5">
+                                            <input type="text" id="tag2" class="form-control">
+                                        </div>
+                                    </div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill4">
+                <div class="row">
+                    <div class="col-sm-6 col-md-11">
+                        <div class="thumbnail">
+                            <div class="caption">
+                                <h3>Allow duplicate values</h3>
+                                <p>
+                                    <div class="form-group">
+                                        <label for="skills" class="col-md-3 control-label" id="skilllabel">*Skills</label>
+                                        <div class="col-md-5">
+                                            <input type="text" id="tag3" class="form-control">
+                                        </div>
+                                    </div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill5">
+                <div class="row">
+                    <div class="col-sm-6 col-md-11">
+                        <div class="thumbnail">
+                            <div class="caption">
+                                <h3>Dynamically add tags</h3>
+                                <p>
+                                    <div class="form-group">
+                                        <label for="skills" class="col-md-3 control-label" id="skilllabel">*Skills</label>
+                                        <div class="col-md-5">
+                                            <input type="text" id="tag4" class="form-control">
+                                        </div>
+                                    </div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="button1">
+                <input type="button" name="btn" value="Submit" id="submitBtn" class="btn btn-primary" data-toggle="modal" data-target="#confirm-submit" /> -->
+            <!-- </div> -->
+        </form>
+        </div>
+        <!-- <div class="modal fade" id="confirm-submit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        Are you sure you want to submit the following details?
+                            <table class="table">
+                                <tr>
+                                    <th>Skills 1:</th>
+                                    <td id="inputskill1"></td>
+                                </tr>
+                                <tr>
+                                    <th>Skills 2:</th>
+                                    <td id="inputskill2"></td>
+                                </tr>
+                                <tr>
+                                    <th>Skills 3:</th>
+                                    <td id="inputskill3"></td>
+                                </tr>
+                                <tr>
+                                    <th>Skills 4:</th>
+                                    <td id="inputskill4"></td>
+                                </tr>
+                                <tr>
+                                    <th>Skills 5:</th>
+                                    <td id="inputskill5"></td>
+                                </tr>
+                            </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" id="submit1">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </body>
+</html>

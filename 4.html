@@ -1,0 +1,189 @@
+<html>
+    <head>
+        <title>Form3 using Bootstrap</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style3.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="main3.js"></script>
+        <script>
+            $( function() {
+            $( ".datepicker" ).datepicker();
+          });
+        </script>
+    </head>
+<body>
+    <div class="main">
+        <form class="form-horizontal" role="form" data-toggle="validator" method="post" name="ContactForm" id="myform">
+            <div class="main1">
+                <ul class="nav nav-tabs">
+                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+                    <li role="presentation"><a href="#about" aria-controls="about" role="tab" data-toggle="tab">About</a></li>
+                    <li role="presentation"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact</a></li>
+                </ul>
+                <div class="tab-content"><br>
+                    <div role="tabpanel" class="tab-pane active" id="home">
+                        <div class="form-group">
+                            <label for="Firstname" class="col-md-3 control-label" id="firstnamelabel">*First name:</label>
+                            <div class="col-md-7">
+                                <input type="text" class="form-control" id="Firstname" min="2" max="20" placeholder="First name">
+                                    <small id="error_firstname" class="ab"></small>
+                            </div>
+                            <div style="clear:both"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname" class="col-md-3 control-label" id="lastnamelabel">*Last name:</label>
+                            <div class="col-md-7">
+                                <input type="text" class="form-control" id="lastname" min="2" max="20" placeholder="Last name">
+                                    <small id="error_lastname" class="ab"></small>
+                            </div>
+                            <div style="clear:both"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="Email" class="col-md-3 control-label" id="emaillabel">*Email:</label>
+                            <div class="col-md-7">
+                                <input type="text" class="form-control" id="email" placeholder="Email">
+                                    <small id="error_email" class="ab"></small>
+                            </div>
+                            <div style="clear:both"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="col-md-3 control-label" id="passwordlabel">*Password:</label>
+                            <div class="col-md-7">
+                                <input type="password" class="form-control" id="inputPassword3" min="6" max="14" placeholder="Password">
+                                    <small id="error_password" class="ab"></small>
+                            </div>
+                            <div style="clear:both"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="dateofbirth" class="col-md-3 control-label" id="doblabel">*Date of birth:</label>
+                            <div class="col-md-7">
+                                <input type="text" class="form-control datepicker" id="datepicker" placeholder="YYYY/MM/DD">
+                                <small id="error_datepicker" class="ab"></small>
+                            </div>
+                            <div style="clear:both"></div>
+                        </div>
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-xs-3 control-label" id="genderlabel">*Gender:</label>
+                                <div class="col-xs-9">
+                                    <div class="radio">
+                                        <label>
+                                            <input id="inlineradio1" name="sampleinlineradio" value="option1" type="radio"> Male
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input id="inlineradio1" name="sampleinlineradio" value="option1" type="radio"> Female
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input id="inlineradio1" name="sampleinlineradio" value="option1" type="radio"> Other
+                                        </label>
+                                    </div>
+                                    <small id="error_gender" class="ab"></small>
+                                </div>
+                                <div style="clear:both"></div>
+                            </div>
+                        </fieldset>
+                        <div class="form-group">
+                            <label for="country" class="col-md-3 control-label" id="countrylabel">*Country:</label>
+                            <div class="col-md-7">
+                                <select class="custom-select form-control" name="countrySelectBox">
+                                    <option selected>Choose....</option>
+                                    <option value="">Afghanistan</option>
+                                    <option value="">Albania</option>
+                                    <option value="">Algeria</option>
+                                    <option value="">Austria</option>
+                                    <option value="">Australia</option>
+                                    <option value="">Aruba</option>
+                                </select>
+                                <small id="error_country" class="ab"></small>
+                            </div>
+                            <div style="clear:both"></div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="about">
+                        <div id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="card">
+                                <div class="card-header" role="tab" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Session1:</a>
+                                    </h5>
+                                </div>
+                                <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="card-block">
+                                        <textarea class="form-control" rows="3"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab" id="headingTwo">
+                                    <h5 class="mb-0">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Session 2:</a>
+                                    </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="card-block">
+                                        <textarea class="form-control" rows="3"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Session 3:</a>
+                                    </h5>
+                                </div>
+                                <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+                                    <div class="card-block">
+                                        <textarea class="form-control" rows="3"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="contact">
+                        <div class="form-group">
+                            <label for="contactno" class="col-md-3 control-label" id="contactnolabel">*Contact no:</label>
+                            <div class="col-md-7">
+                                <input type="tel" class="form-control" id="contactno" placeholder="Phone number">
+                                <small id="error_phoneno" class="ab"></small>
+                            </div>
+                            <div style="clear:both"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactemail" class="col-md-3 control-label" id="contactemaillabel">*Contact Email:</label>
+                            <div class="col-md-7">
+                                <input type="text" class="form-control" id="contactemail" placeholder="Email Address">
+                                <small id="error_contactemail" class="ab"</small>
+                            </div>
+                            <div style="clear:both"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="interest" class="col-md-3 control-label" id="interestlabel">*Interest:</label>
+                            <div class="col-md-7">
+                                <input type="text" class="form-control" data-role="tagsinput" id="tags" placeholder="Subject">
+                                <small id="error_interest" class="ab"></small>
+                            </div>
+                            <div style="clear:both"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="address" class="col-md-3 control-label">Address:</label>
+                            <div class="col-md-7">
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <input class="btn btn-primary" type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

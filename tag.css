@@ -1,0 +1,46 @@
+.heading
+{
+    text-align: center;
+}
+.caption
+{
+    background-color: #f1f1f1;
+}
+#skilllabel
+{
+    font-size: large;
+}
+.bootstrap-tagsinput{
+    display: block !important;
+}
+.skill1
+{
+    margin-left: 6%;
+    margin-top: 2%;
+}
+.skill2
+{
+    margin-left: 6%;
+    margin-top: 2%;
+}
+.skill3
+{
+    margin-left: 6%;
+    margin-top: 2%;
+}
+.skill4
+{
+    margin-left: 6%;
+    margin-top: 2%;
+}
+.skill5
+{
+    margin-left: 6%;
+    margin-top: 2%;
+}
+/*#tag id::-ms-clear {  display: none; width : 0; height: 0; }*/
+.button1
+{
+    margin-left:6%;
+    margin-top:2%;
+}
